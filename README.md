@@ -1,2 +1,11 @@
 # APU-Medical-Centre
-The goal of this project is to strengthen the security aspects of the database at APU Medical Centre Using SQL
+In summary, the project necessitates a thorough examination and implementation of security measures, with a focus on SQL roles, encryption of critical data, and complete audits. To ensuring a least privilege approach and restricting access to pertinent data, the architect has specified precise requirements for three different user types: patients, nurses, and doctors. This includes data modification restrictions, access controls, and distinct system user IDs.
+
+When it comes to improving database security at APU Medical Center, it is critical to comprehend the various user types and the duties that go along with them. Three main user types are supported by the system: patients, nurses, and doctors. Each of these user groups is assigned roles and privileges that are customized to meet their unique professional needs.
+
+Patients: As the system's end users, patients receive a special system user ID for individualized access. Accessing and updating personal information, such as phone numbers, passport numbers, and payment card details, is one of their main responsibilities. Crucially, patients can examine the drugs they are prescribed, but they cannot edit or remove any previous information. The system protects patients' privacy by not allowing access to their personal information or prescription information.
+
+Nurses: Because they are vital to the healthcare system, nurses have individual system user IDs that allow them to interface with the database with ease. They are accountable for checking and updating their personal data, with limitations on private information. In order to maintain data integrity, nurses are also permitted access to patient medication records for monitoring purposes. However, they are not permitted to make any changes. Patients' personal information is available for access and updates, except for sensitive data.
+
+Doctors: Doctors have individual user IDs and individualized access to the system since they are essential to patient care. Their duties include tracking the prescriptions they've prescribed, adding new drug details for their patients, and viewing and updating their personal information. Crucially, clinicians may access every element of a patient's prescription regimen, which promotes thorough care. To ensure accountability and data accuracy, controls are in place to prevent the deletion or change of drug details added by other doctors.
+
